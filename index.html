@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HomePilot AI — Home Assistant Quick Fix Guide</title>
+    <meta
+      name="description"
+      content="Um guia prático para resolver os problemas mais comuns do Home Assistant sem perder horas em fóruns."
+    />
+    <style>
+      :root {
+        --bg: #0b1220;
+        --panel: #101a2e;
+        --text: #eef4ff;
+        --muted: #b7c3da;
+        --accent: #7dd3fc;
+        --accent-2: #38bdf8;
+        --border: rgba(255,255,255,0.08);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #13213d 0%, var(--bg) 55%);
+        color: var(--text);
+        line-height: 1.55;
+      }
+      .wrap { max-width: 1040px; margin: 0 auto; padding: 32px 20px 64px; }
+      .nav { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:48px; }
+      .brand { font-weight:800; letter-spacing:.2px; }
+      .pill {
+        display:inline-block; padding:6px 10px; border:1px solid var(--border); border-radius:999px;
+        color: var(--muted); font-size: 13px;
+      }
+      .hero {
+        display:grid; gap:28px; grid-template-columns: 1.2fr .8fr; align-items: center;
+        padding: 32px; border:1px solid var(--border); border-radius:24px; background: rgba(16,26,46,.78); backdrop-filter: blur(8px);
+      }
+      h1 { font-size: clamp(2.2rem, 5vw, 4.2rem); line-height:1.05; margin:.4rem 0 1rem; }
+      h2 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); margin:0 0 14px; }
+      p { margin: 0 0 16px; color: var(--muted); font-size: 1.02rem; }
+      ul { margin: 0; padding-left: 18px; color: var(--muted); }
+      li { margin: 8px 0; }
+      .cta-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:24px; }
+      .button {
+        display:inline-block; padding:14px 18px; border-radius:14px; text-decoration:none; font-weight:700;
+        border:1px solid var(--border);
+      }
+      .button.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color:#062135; }
+      .button.secondary { color: var(--text); background: transparent; }
+      .card-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:16px; margin-top:20px; }
+      .card { background: rgba(16,26,46,.72); border:1px solid var(--border); border-radius:18px; padding:20px; }
+      .section { margin-top: 28px; }
+      .price {
+        display:inline-block; font-size: 2rem; font-weight: 800; margin: 8px 0 16px;
+      }
+      .footer { margin-top: 32px; color: #90a4c0; font-size: .94rem; }
+      .note { color: #dbeafe; font-size: .96rem; }
+      @media (max-width: 860px) {
+        .hero, .card-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">HomePilot AI</div>
+        <div class="pill">Produto #001 · Quick Fix Guide</div>
+      </div>
+
+      <section class="hero">
+        <div>
+          <span class="pill">Home Assistant · Troubleshooting prático</span>
+          <h1>Resolve os problemas mais comuns do Home Assistant sem perder horas em fóruns.</h1>
+          <p>Um guia curto, prático e direto para identificar o problema, perceber a causa provável e aplicar a correção mais rápida.</p>
+          <p class="note"><strong>Menos tentativa e erro.</strong> Mais clareza. Mais tempo poupado.</p>
+          <div class="cta-row">
+            <a class="button primary" href="#preco">Quero o guia agora</a>
+            <a class="button secondary" href="#conteudo">Ver o que inclui</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2>O que trava os utilizadores</h2>
+          <ul>
+            <li>automations que não disparam</li>
+            <li>sensores com valores errados</li>
+            <li>integrações que falham sem explicação</li>
+            <li>YAML com erros difíceis de ler</li>
+            <li>tempo perdido em threads e vídeos dispersos</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section card-grid">
+        <div class="card">
+          <h2>Problema</h2>
+          <p>Normalmente não falta informação. Falta uma forma simples de diagnosticar e corrigir sem perder meio dia.</p>
+        </div>
+        <div class="card">
+          <h2>Solução</h2>
+          <p>Um guia prático com sintomas, causas prováveis e passos de correção para desbloquear o Home Assistant mais depressa.</p>
+        </div>
+        <div class="card">
+          <h2>Para quem é</h2>
+          <p>Para quem já usa Home Assistant e quer resolver problemas reais sem entrar em complexidade desnecessária.</p>
+        </div>
+      </section>
+
+      <section class="section card" id="conteudo">
+        <h2>O que vais encontrar dentro</h2>
+        <ul>
+          <li>10 problemas comuns do Home Assistant</li>
+          <li>Formato: sintoma → causa provável → correção</li>
+          <li>Checklist de diagnóstico rápido</li>
+          <li>Boas práticas para evitar repetir o erro</li>
+          <li>Guia pensado para consulta rápida</li>
+        </ul>
+      </section>
+
+      <section class="section card" id="preco">
+        <h2>Preço de lançamento</h2>
+        <div class="price">9€</div>
+        <p>Preço de entrada para validar o mercado e facilitar a primeira compra.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#">Comprar agora</a>
+          <a class="button secondary" href="#faq">Ver perguntas frequentes</a>
+        </div>
+      </section>
+
+      <section class="section card" id="faq">
+        <h2>FAQ</h2>
+        <p><strong>Isto é um curso?</strong><br />Não. É um guia prático em PDF.</p>
+        <p><strong>Serve para iniciantes?</strong><br />Sim, para quem quer resolver problemas sem profundidade excessiva.</p>
+        <p><strong>Recebo o ficheiro logo após a compra?</strong><br />Essa é a ideia: entrega digital simples e imediata.</p>
+      </section>
+
+      <div class="footer">HomePilot AI · Tempo, simplicidade e resolução de problemas.</div>
+    </div>
+  </body>
+</html>

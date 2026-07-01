@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HomePilot AI">
+  <rect width="64" height="64" rx="16" fill="#0b1220"/>
+  <path d="M14 32L32 16l18 16v18H14z" fill="#7dd3fc"/>
+  <path d="M24 34h16v12H24z" fill="#0b1220"/>
+</svg>
